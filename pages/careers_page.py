@@ -15,9 +15,9 @@ class CareersPage(PageBase):
         self.check()
 
     def check(self):
-        assert self.is_element_visible(self.LOCATIONS_SLIDER, "Locations block is not visible!")
-        assert self.is_element_visible(self.TEAMS_SECTION, "Teams block is not visible!")
-        assert self.is_element_visible(self.LIFE_SECTION, "Life at Insider block is not visible!")
+        self.is_element_visible(self.LOCATIONS_SLIDER, "Locations block is not visible!")
+        self.is_element_visible(self.TEAMS_SECTION, "Teams block is not visible!")
+        self.is_element_visible(self.LIFE_SECTION, "Life at Insider block is not visible!")
 
     def go_to_qa_jobs(self):
         """
