@@ -25,9 +25,9 @@ class JobsPage(PageBase):
         self.check()
 
     def check(self):
-        assert self.is_element_visible(self.LOCATION_FILTER_DROPDOWN, "Locations block is not visible!")
-        assert self.is_element_visible(self.DEPARTMENT_FILTER_DROPDOWN, "Teams block is not visible!")
-        assert self.is_element_visible(self.JOBS_LIST_CONTAINER, "Life at Insider block is not visible!")
+        self.is_element_visible(self.LOCATION_FILTER_DROPDOWN, "Locations block is not visible!")
+        self.is_element_visible(self.DEPARTMENT_FILTER_DROPDOWN, "Teams block is not visible!")
+        self.is_element_visible(self.JOBS_LIST_CONTAINER, "Life at Insider block is not visible!")
 
     def wait_until_job_list_refreshed(self, new_location):
         """
